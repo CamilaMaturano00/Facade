@@ -1,0 +1,11 @@
+"use strict";
+exports.__esModule = true;
+var Facade_1 = require("./bateria/Facade");
+var Facade_2 = require("./vuelos/Facade");
+var cliente1 = new Facade_2["default"]();
+cliente1.buscar("15/01/2022", "30/01/2022", "Mendoza", "Cancun");
+var celular = new Facade_1["default"]();
+console.log("-----------Encender---------------");
+celular.celularOn();
+console.log("------------Apagar------------");
+celular.celularOff();
